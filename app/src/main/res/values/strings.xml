@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">BooCalculator</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button1text">1</string>
+    <string name="button2text">2</string>
+    <string name="button3text">3</string>
+    <string name="button4text">4</string>
+    <string name="button5text">5</string>
+    <string name="button6text">6</string>
+    <string name="button7text">7</string>
+    <string name="button8text">8</string>
+    <string name="button9text">9</string>
+    <string name="buttonmodtext">%</string>
+    <string name="button0text">0</string>
+    <string name="buttondottext">.</string>
 </resources>
