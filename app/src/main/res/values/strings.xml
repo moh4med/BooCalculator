@@ -14,4 +14,9 @@
     <string name="buttonmodtext">%</string>
     <string name="button0text">0</string>
     <string name="buttondottext">.</string>
+    <string name="buttonmultext">*</string>
+    <string name="buttonplustext">+</string>
+    <string name="buttonminustext">-</string>
+    <string name="buttoneqtext">=</string>
+    <string name="buttondivtext">/</string>
 </resources>
