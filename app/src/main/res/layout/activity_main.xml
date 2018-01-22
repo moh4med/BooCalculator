@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.mohamed.boocalculator.MainActivity"
     android:orientation="vertical">
-
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/inputtv"
+        android:layout_height="100dp"
+        android:textSize="20sp"
+        tools:text="sdfsdfsdfsdffsdf"
+        />
     <TextView
         android:layout_width="match_parent"
         android:id="@+id/outputtv"
-        android:layout_height="150dp"
-        android:textSize="20dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
         tools:text="sdfsdfsdfsdffsdf"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,62 +29,83 @@
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="3"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginRight="-8dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginBottom="-10dp">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="@string/buttonmodtext"
-                    android:onClick="opClick"/>
+                    android:onClick="opClick"
+                    android:layout_marginRight="-8dp"/>
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="@string/buttondivtext"
-                    android:onClick="opClick"/>
+                    android:onClick="opClick"
+                    android:layout_marginRight="-8dp"/>
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="@string/buttonmultext"
-                    android:onClick="opClick"/>
+                    android:onClick="opClick"
+                    android:layout_marginRight="-8dp"/>
             </LinearLayout>
             <fragment
                 class="com.example.mohamed.boocalculator.numbersFragment"
                 android:id="@+id/numfragment"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
-                android:layout_weight="3"/>
+                android:layout_weight="3"
+                tools:layout="@layout/fragment_numbers" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginRight="-8dp">
+
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_weight="2"
-                android:text="@string/buttoneqtext"
-                android:onClick="opClick"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="0px"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/buttonplustext"
-                android:onClick="opClick"/>
+                android:onClick="opClick"
+                android:text="@string/buttondeltext"
+                android:layout_marginBottom="-12dp"/>
+
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="0px"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="opClick"
                 android:text="@string/buttonminustext"
-                android:onClick="opClick"/>
+                android:layout_marginBottom="-12dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="opClick"
+                android:text="@string/buttonplustext"
+                android:layout_marginBottom="-12dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.6"
+                android:onClick="opClick"
+                android:text="@string/buttoneqtext"
+                android:layout_marginBottom="4dp"/>
         </LinearLayout>
     </LinearLayout>
 

@@ -19,4 +19,5 @@
     <string name="buttonminustext">-</string>
     <string name="buttoneqtext">=</string>
     <string name="buttondivtext">/</string>
+    <string name="buttondeltext">DEL</string>
 </resources>
