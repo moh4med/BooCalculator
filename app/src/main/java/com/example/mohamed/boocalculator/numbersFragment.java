@@ -1,7 +1,6 @@
 package com.example.mohamed.boocalculator;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -53,7 +52,7 @@ public class numbersFragment extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         Log.e(TAG,"calling oncreateView");
-        View view = inflater.inflate(R.layout.fragment_numbers, container, false);
+        View view = inflater.inflate(R.layout.fragment_number, container, false);
         Button button0 = (Button) view.findViewById(R.id.button0);
         button0.setOnClickListener(this);
         Button button1 = (Button) view.findViewById(R.id.button1);
