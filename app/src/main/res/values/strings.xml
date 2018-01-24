@@ -11,7 +11,8 @@
     <string name="button7text">7</string>
     <string name="button8text">8</string>
     <string name="button9text">9</string>
-    <string name="buttonmodtext">%</string>
+    <string name="buttonmodtext">mod</string>
+    <string name="buttonpercenttext">%</string>
     <string name="button0text">0</string>
     <string name="buttondottext">.</string>
     <string name="buttonmultext">*</string>
@@ -20,4 +21,25 @@
     <string name="buttoneqtext">=</string>
     <string name="buttondivtext">/</string>
     <string name="buttondeltext">DEL</string>
+    <string name="buttonrightparantext">)</string>
+    <string name="buttonleftparantext">(</string>
+    <string name="buttonlog2text">log2</string>
+    <string name="buttonrandom">rand</string>
+    <string name="buttonsquaretext">X ^ <sup><small> 2 </small></sup></string>
+    <string name="buttoncubetext">X ^ <sup><small> 3 </small></sup></string>
+    <string name="buttoninversetext">1/X</string>
+    <string name="buttongenpowertext">X ^ <sup><small> Y </small></sup></string>
+    <string name="buttonsqrttext">√X</string>
+    <string name="buttongenroottext"> <sup><small> Y </small></sup>√X </string>
+    <string name="buttonfactorialtext"> X! </string>
+    <string name="buttonbinomialtext"><sup><small> n </small></sup>C<sup><small> r </small></sup></string>
+    <string name="buttonevaltext">e</string>
+    <string name="buttonPitext">pi</string>
+    <string name="buttonlog10text">log10</string>
+    <string name="buttonlntext">ln</string>
+    <string name="buttonsintext">sin</string>
+    <string name="buttoncostext">cos</string>
+    <string name="buttontantext">tan</string>
+    <string name="buttonDEGtext">DEG</string>
+
 </resources>

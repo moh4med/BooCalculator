@@ -14,7 +14,7 @@ public class numbersFragment extends Fragment implements View.OnClickListener {
     private static String TAG=numbersFragment.class.getSimpleName();
     numberListener MnumberListener;
     public interface numberListener{
-        void OnClick(String s);
+        void onNumClick(String s);
     }
     @Override
     public void onAttach(Context context) {
@@ -55,6 +55,8 @@ public class numbersFragment extends Fragment implements View.OnClickListener {
         View view = inflater.inflate(R.layout.fragment_number, container, false);
         Button button0 = (Button) view.findViewById(R.id.button0);
         button0.setOnClickListener(this);
+        Button buttonpercent = (Button) view.findViewById(R.id.buttonpercent);
+        buttonpercent.setOnClickListener(this);
         Button button1 = (Button) view.findViewById(R.id.button1);
         button1.setOnClickListener(this);
         Button button2 = (Button) view.findViewById(R.id.button2);
@@ -80,7 +82,9 @@ public class numbersFragment extends Fragment implements View.OnClickListener {
 
 
     @Override
-    public void onClick(View v) {
-        MnumberListener.OnClick(((Button)v).getText().toString());
+    public void onClick(View v)
+    {
+        String s=((Button)v).getText().toString();
+        MnumberListener.onNumClick(s);
     }
 }
