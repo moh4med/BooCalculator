@@ -16,121 +16,18 @@
             android:id="@+id/inputtv"
             android:layout_height="100dp"
             android:textSize="20sp"
-            tools:text="sdfsdfsdfsdffsdf"
+            tools:text="1+2*3"
+            android:backgroundTint="#000"
             />
         <TextView
             android:layout_width="match_parent"
             android:id="@+id/outputtv"
             android:layout_height="50dp"
             android:textSize="20sp"
-            tools:text="sdfsdfsdfsdffsdf"
+            tools:text="7"
             />
-
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="40dp">
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_weight="1">
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/buttonmodtext"
-                    android:onClick="opClick"
-                    android:background="@color/coloroperationbackground"
-                    android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/buttondivtext"
-                    android:onClick="opClick"
-                    android:background="@color/coloroperationbackground"
-                    android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/buttonmultext"
-                    android:onClick="opClick"
-                    android:background="@color/coloroperationbackground"
-                    android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
-                <Button
-                    android:id="@+id/buttondel"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:onClick="opClick"
-                    android:text="@string/buttondeltext"
-                    android:background="@color/coloroperationbackground"
-                    android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
-            </TableRow>
-            <TableRow android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_weight="4">
-                <fragment
-                    class="com.example.mohamed.boocalculator.numbersFragment"
-                    android:id="@+id/numfragment"
-                    android:layout_width="0px"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    tools:layout="@layout/fragment_number" />
-
-                <LinearLayout
-                    android:layout_width="0px"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:onClick="opClick"
-                        android:text="@string/buttonminustext"
-                        android:background="@color/coloroperationbackground"
-                        android:textSize="35sp"
-                        android:textColor="@color/coloroperationtext"
-                        android:textStyle="bold"
-                        android:fontFamily="cursive"/>
-
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:onClick="opClick"
-                        android:text="@string/buttonplustext"
-                        android:background="@color/coloroperationbackground"
-                        android:textSize="35sp"
-                        android:textColor="@color/coloroperationtext"
-                        android:textStyle="bold"
-                        android:fontFamily="cursive"/>
-
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2.6"
-                        android:onClick="opClick"
-                        android:text="@string/buttoneqtext"
-                        android:background="@color/coloroperationbackground"
-                        android:textSize="36dp"
-                        android:textColor="@color/coloroperationtext"
-                        android:textStyle="bold"
-                        android:fontFamily="cursive"/>
-                </LinearLayout>
-            </TableRow>
-        </TableLayout>
-
+        <include
+            layout="@layout/basicop" />
 
     </LinearLayout>
 

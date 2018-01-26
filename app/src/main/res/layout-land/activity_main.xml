@@ -44,8 +44,7 @@
                     android:onClick="opClick"
                     android:background="@color/coloroperationbackground"
                     android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
+                   />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -54,8 +53,7 @@
                     android:onClick="opClick"
                     android:background="@color/coloroperationbackground"
                     android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
+                    />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -64,8 +62,7 @@
                     android:onClick="opClick"
                     android:background="@color/coloroperationbackground"
                     android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
+                    />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -73,9 +70,7 @@
                     android:text="@string/buttonlog2text"
                     android:onClick="opClick"
                     android:background="@color/coloroperationbackground"
-                    android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
+                    android:textColor="@color/coloroperationtext" />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -83,9 +78,7 @@
                     android:text="@string/buttonlog10text"
                     android:onClick="opClick"
                     android:background="@color/coloroperationbackground"
-                    android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
+                    android:textColor="@color/coloroperationtext" />
             </TableRow>
             <TableRow
                 android:layout_height="0px"
@@ -97,9 +90,7 @@
                     android:text="@string/buttonsquaretext"
                     android:onClick="opClick"
                     android:background="@color/coloroperationbackground"
-                    android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
+                    android:textColor="@color/coloroperationtext" />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -107,9 +98,7 @@
                     android:text="@string/buttoncubetext"
                     android:onClick="opClick"
                     android:background="@color/coloroperationbackground"
-                    android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
+                    android:textColor="@color/coloroperationtext" />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -117,9 +106,7 @@
                     android:text="@string/buttoninversetext"
                     android:onClick="opClick"
                     android:background="@color/coloroperationbackground"
-                    android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
+                    android:textColor="@color/coloroperationtext" />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -127,9 +114,7 @@
                     android:text="@string/buttongenpowertext"
                     android:onClick="opClick"
                     android:background="@color/coloroperationbackground"
-                    android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
+                    android:textColor="@color/coloroperationtext" />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -138,8 +123,7 @@
                     android:onClick="opClick"
                     android:background="@color/coloroperationbackground"
                     android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
+                    />
             </TableRow> <TableRow
                 android:layout_height="0px"
                 android:layout_weight="1">
@@ -150,9 +134,7 @@
                     android:text="@string/buttonsqrttext"
                     android:onClick="opClick"
                     android:background="@color/coloroperationbackground"
-                    android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
+                    android:textColor="@color/coloroperationtext" />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -160,9 +142,7 @@
                     android:text="@string/buttongenroottext"
                     android:onClick="opClick"
                     android:background="@color/coloroperationbackground"
-                    android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
+                    android:textColor="@color/coloroperationtext" />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -171,8 +151,7 @@
                     android:onClick="opClick"
                     android:background="@color/coloroperationbackground"
                     android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
+                    />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -181,8 +160,7 @@
                     android:onClick="opClick"
                     android:background="@color/coloroperationbackground"
                     android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
+                    />
             <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -191,8 +169,7 @@
                     android:onClick="opClick"
                     android:background="@color/coloroperationbackground"
                     android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
+                    />
             </TableRow>
             <TableRow
                 android:layout_height="0px"
@@ -205,8 +182,7 @@
                 android:onClick="opClick"
                 android:background="@color/coloroperationbackground"
                 android:textColor="@color/coloroperationtext"
-                android:textStyle="bold"
-                android:fontFamily="cursive"/>
+                />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -215,8 +191,7 @@
                     android:onClick="opClick"
                     android:background="@color/coloroperationbackground"
                     android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
+                   />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -225,8 +200,7 @@
                     android:onClick="opClick"
                     android:background="@color/coloroperationbackground"
                     android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
+                    />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -234,9 +208,7 @@
                     android:text="@string/buttontantext"
                     android:onClick="opClick"
                     android:background="@color/coloroperationbackground"
-                    android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
+                    android:textColor="@color/coloroperationtext" />
 
             <Button
                     android:layout_width="match_parent"
@@ -246,112 +218,16 @@
                     android:onClick="opClick"
                     android:background="@color/coloroperationbackground"
                     android:textColor="@color/coloroperationtext"
-                    android:textStyle="bold"
-                    android:fontFamily="cursive"/>
+                    />
             </TableRow>
 
         </TableLayout>
-        <TableLayout
-                android:layout_width="0px"
-                android:layout_height="match_parent"
-                android:layout_weight="5">
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="0px"
-                    android:layout_weight="1">
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/buttonmodtext"
-                        android:onClick="opClick"
-                        android:background="@color/coloroperationbackground"
-                        android:textColor="@color/coloroperationtext"
-                        android:textStyle="bold"
-                        android:fontFamily="cursive"/>
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/buttondivtext"
-                        android:onClick="opClick"
-                        android:background="@color/coloroperationbackground"
-                        android:textColor="@color/coloroperationtext"
-                        android:textStyle="bold"
-                        android:fontFamily="cursive"/>
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/buttonmultext"
-                        android:onClick="opClick"
-                        android:background="@color/coloroperationbackground"
-                        android:textColor="@color/coloroperationtext"
-                        android:textStyle="bold"
-                        android:fontFamily="cursive"/>
-                    <Button
-                        android:id="@+id/buttondel"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:onClick="opClick"
-                        android:text="@string/buttondeltext"
-                        android:background="@color/coloroperationbackground"
-                        android:textColor="@color/coloroperationtext"
-                        android:textStyle="bold"
-                        android:fontFamily="cursive"/>
-                </TableRow>
-                <TableRow android:layout_width="match_parent"
-                    android:layout_height="0px"
-                    android:layout_weight="10">
-                    <fragment
-                        class="com.example.mohamed.boocalculator.numbersFragment"
-                        android:id="@+id/numfragment"
-                        android:layout_width="0px"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        tools:layout="@layout/fragment_number" />
 
-                    <LinearLayout
-                        android:layout_width="0px"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:layout_weight="1">
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:onClick="opClick"
-                            android:text="@string/buttonminustext"
-                            android:background="@color/coloroperationbackground"
-                            android:textColor="@color/coloroperationtext"
-                            android:textStyle="bold"
-                            android:fontFamily="cursive"/>
-
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:onClick="opClick"
-                            android:text="@string/buttonplustext"
-                            android:background="@color/coloroperationbackground"
-                            android:textColor="@color/coloroperationtext"
-                            android:textStyle="bold"
-                            android:fontFamily="cursive"/>
-
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2.6"
-                            android:onClick="opClick"
-                            android:text="@string/buttoneqtext"
-                            android:background="@color/coloroperationbackground"
-                            android:textColor="@color/coloroperationtext"
-                            android:textStyle="bold"
-                            android:fontFamily="cursive"/>
-                    </LinearLayout>
-                </TableRow>
-            </TableLayout>
+        <include
+            layout="@layout/basicop"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="5"/>
 
     </LinearLayout>
 

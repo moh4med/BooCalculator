@@ -16,8 +16,6 @@
             android:text="@string/button1text"
             android:background="@color/colorNumberbackgorund"
             android:textColor="@color/colorNumbertext"
-            android:textStyle="bold"
-            android:fontFamily="cursive"
             />
         <Button
             android:id="@+id/button2"
@@ -26,9 +24,7 @@
             android:layout_weight="1"
             android:text="@string/button2text"
             android:background="@color/colorNumberbackgorund"
-            android:textColor="@color/colorNumbertext"
-            android:textStyle="bold"
-            android:fontFamily="cursive"/>
+            android:textColor="@color/colorNumbertext" />
 
         <Button
             android:id="@+id/button3"
@@ -37,9 +33,7 @@
             android:layout_weight="1"
             android:text="@string/button3text"
             android:background="@color/colorNumberbackgorund"
-            android:textColor="@color/colorNumbertext"
-            android:textStyle="bold"
-            android:fontFamily="cursive"/>
+            android:textColor="@color/colorNumbertext" />
     </TableRow>
 
     <TableRow
@@ -54,9 +48,7 @@
             android:layout_weight="1"
             android:text="@string/button4text"
             android:background="@color/colorNumberbackgorund"
-            android:textColor="@color/colorNumbertext"
-            android:textStyle="bold"
-            android:fontFamily="cursive"/>
+            android:textColor="@color/colorNumbertext" />
         <Button
             android:id="@+id/button5"
             android:layout_width="0px"
@@ -64,9 +56,7 @@
             android:layout_weight="1"
             android:text="@string/button5text"
             android:background="@color/colorNumberbackgorund"
-            android:textColor="@color/colorNumbertext"
-            android:textStyle="bold"
-            android:fontFamily="cursive"/>
+            android:textColor="@color/colorNumbertext" />
         <Button
             android:id="@+id/button6"
             android:layout_width="0px"
@@ -74,9 +64,7 @@
             android:layout_weight="1"
             android:text="@string/button6text"
             android:background="@color/colorNumberbackgorund"
-            android:textColor="@color/colorNumbertext"
-            android:textStyle="bold"
-            android:fontFamily="cursive"/>
+            android:textColor="@color/colorNumbertext" />
     </TableRow>
 
     <TableRow
@@ -85,9 +73,7 @@
         android:layout_weight="1"
         android:orientation="horizontal"
         android:background="@color/colorNumberbackgorund"
-        android:textColor="@color/colorNumbertext"
-        android:textStyle="bold"
-        android:fontFamily="cursive">
+        android:textColor="@color/colorNumbertext">
         <Button
             android:id="@+id/button7"
             android:layout_width="0px"
@@ -95,9 +81,7 @@
             android:layout_weight="1"
             android:text="@string/button7text"
             android:background="@color/colorNumberbackgorund"
-            android:textColor="@color/colorNumbertext"
-            android:textStyle="bold"
-            android:fontFamily="cursive"/>
+            android:textColor="@color/colorNumbertext" />
         <Button
             android:id="@+id/button8"
             android:layout_width="0px"
@@ -105,9 +89,7 @@
             android:layout_weight="1"
             android:text="@string/button8text"
             android:background="@color/colorNumberbackgorund"
-            android:textColor="@color/colorNumbertext"
-            android:textStyle="bold"
-            android:fontFamily="cursive"/>
+            android:textColor="@color/colorNumbertext" />
         <Button
             android:id="@+id/button9"
             android:layout_width="0px"
@@ -115,9 +97,7 @@
             android:layout_weight="1"
             android:text="@string/button9text"
             android:background="@color/colorNumberbackgorund"
-            android:textColor="@color/colorNumbertext"
-            android:textStyle="bold"
-            android:fontFamily="cursive"/>
+            android:textColor="@color/colorNumbertext" />
     </TableRow>
 
     <TableRow
@@ -133,9 +113,7 @@
             android:layout_weight="1"
             android:text="@string/buttonpercenttext"
             android:background="@color/colorNumberbackgorund"
-            android:textColor="@color/colorNumbertext"
-            android:textStyle="bold"
-            android:fontFamily="cursive"/>
+            android:textColor="@color/colorNumbertext" />
         <Button
             android:id="@+id/button0"
             android:layout_width="0px"
@@ -143,9 +121,7 @@
             android:layout_weight="1"
             android:text="@string/button0text"
             android:background="@color/colorNumberbackgorund"
-            android:textColor="@color/colorNumbertext"
-            android:textStyle="bold"
-            android:fontFamily="cursive"/>
+            android:textColor="@color/colorNumbertext" />
         <Button
             android:id="@+id/buttondot"
             android:layout_width="0px"
@@ -153,9 +129,7 @@
             android:layout_weight="1"
             android:text="@string/buttondottext"
             android:background="@color/colorNumberbackgorund"
-            android:textColor="@color/colorNumbertext"
-            android:textStyle="bold"
-            android:fontFamily="cursive"/>
+            android:textColor="@color/colorNumbertext" />
     </TableRow>
 
 </TableLayout>
