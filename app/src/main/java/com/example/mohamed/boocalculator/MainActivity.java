@@ -1,8 +1,13 @@
 package com.example.mohamed.boocalculator;
 
 import android.content.Context;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.util.Pair;
 import android.view.View;
@@ -13,24 +18,39 @@ import android.widget.TextView;
 
 import org.mariuszgromada.math.mxparser.*;
 
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Stack;
 
-public class MainActivity extends AppCompatActivity implements numbersFragment.numberListener {
+public class MainActivity extends AppCompatActivity
+        implements numbersFragment.numberListener,HistoryAdapter.operationviewOnClickListener{
+
     private static final String INPUTSTRINGTAG ="INPUTSTRINGTAG" ;
     private static final String HISTORYTAG ="HISTORYTAGTAG" ;
     private static String TAG = MainActivity.class.getSimpleName();
     EditText inputEText;
     TextView outputTv;
-    Stack<Pair<String, String>> OperationHistory;
-
+    ArrayList<operationanswerdata> OperationHistory;
+    RecyclerView HistoryRecycleView;
+    DrawerLayout mdrawerlayout;
+    HistoryAdapter historyAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        OperationHistory=new  Stack<Pair<String, String>>();
+        OperationHistory=new  ArrayList<operationanswerdata>();
         outputTv = (TextView) findViewById(R.id.outputtv);
         inputEText = (EditText) findViewById(R.id.inputtv);
+        mdrawerlayout=(DrawerLayout)findViewById(R.id.my_drawer_layout);
+        HistoryRecycleView=(RecyclerView) findViewById(R.id.historyrecycleview);
+        if(savedInstanceState!=null){               //restore the session data
+            String s=savedInstanceState.getString(INPUTSTRINGTAG);
+            inputEText.setText(s);
+            OperationHistory=savedInstanceState.getParcelableArrayList(HISTORYTAG);
+        }
+        historyAdapter=new HistoryAdapter(OperationHistory,this);
+        HistoryRecycleView.setAdapter(historyAdapter);
+        HistoryRecycleView.setLayoutManager(new LinearLayoutManager(this));
         inputEText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,10 +61,6 @@ public class MainActivity extends AppCompatActivity implements numbersFragment.n
                 }
             }
         });
-        if(savedInstanceState!=null){               //restore the session data
-            String s=savedInstanceState.getString(INPUTSTRINGTAG);
-            inputEText.setText(s);
-        }
         processOperation();
         Log.e(TAG, "ONCREATE");
     }
@@ -58,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements numbersFragment.n
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         outState.putString(INPUTSTRINGTAG,inputEText.getText().toString());
-        //todo save stack data
+        outState.putParcelableArrayList(HISTORYTAG,OperationHistory);
         super.onSaveInstanceState(outState);
     }
 
@@ -76,7 +92,8 @@ public class MainActivity extends AppCompatActivity implements numbersFragment.n
         } else if (s.equals(getString(R.string.buttoneqtext))) {
             processOperation();
             String output = outputTv.getText().toString();
-            OperationHistory.push(new Pair <String, String>(input,output));
+            OperationHistory.add(new operationanswerdata(input,output));
+            this.historyAdapter.notifyDataSetChanged();
             inputEText.setText(output);
             inputEText.setSelection(output.length());
             outputTv.setText("");
@@ -162,5 +179,12 @@ public class MainActivity extends AppCompatActivity implements numbersFragment.n
     private double evaluate(String s) {
         Expression ex = new Expression(s);
         return ex.calculate();
+    }
+
+    @Override
+    public void operationviewOnClick(String operation) {
+        inputEText.setText(operation);
+        processOperation();
+        mdrawerlayout.closeDrawers();
     }
 }
