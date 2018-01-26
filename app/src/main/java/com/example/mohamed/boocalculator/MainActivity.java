@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity
     private static String TAG = MainActivity.class.getSimpleName();
     EditText inputEText;
     TextView outputTv;
+    Button buttondel;
     ArrayList<operationanswerdata> OperationHistory;
     RecyclerView HistoryRecycleView;
     DrawerLayout mdrawerlayout;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity
         OperationHistory=new  ArrayList<operationanswerdata>();
         outputTv = (TextView) findViewById(R.id.outputtv);
         inputEText = (EditText) findViewById(R.id.inputtv);
+        buttondel=(Button)findViewById(R.id.buttondel);
         mdrawerlayout=(DrawerLayout)findViewById(R.id.my_drawer_layout);
         HistoryRecycleView=(RecyclerView) findViewById(R.id.historyrecycleview);
         if(savedInstanceState!=null){               //restore the session data
@@ -59,6 +61,13 @@ public class MainActivity extends AppCompatActivity
                     InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                     imm.hideSoftInputFromWindow(currentFocus.getWindowToken(), 0);
                 }
+            }
+        });
+        buttondel.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                inputEText.setText("");
+                return true;
             }
         });
         processOperation();
@@ -82,7 +91,6 @@ public class MainActivity extends AppCompatActivity
         String s = ((Button) v).getText().toString();
         String input = inputEText.getText().toString();
         if (s.equals(getString(R.string.buttondeltext))) {        // delete the char from input not added delete many
-            /* todo long press for clear the input */
             int chartodelete = inputEText.getSelectionStart() - 1;    //get start of the selection &delete it
             if (chartodelete >= 0) {
                 input = input.substring(0, chartodelete) + input.substring(chartodelete + 1);
